@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFrom.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aryan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a id="resume" target="_blank" href="Aryan_Purwar_Resume.pdf">View Resume</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" id="home">
+            <div class="leftSection">
+                Hii, My name is <span class="purple">Aryan</span> and I am a passionate<br>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section class="secondSection" id="projects">
+            <h1>My Projects</h1>
+            <div class="firstProject">
+                <h3>Currency Converter</h3>
+                <img src="pr1oject.png" alt="project1">
+                <p id="cap">Instantly Convert. Globally Connect.</p>
+                <p> A sleek and responsive Currency Converter Web App built using HTML, CSS, JavaScript, and real-time Exchange Rate APIs. Simple, fast, and accurate — convert currencies anytime, anywhere!</p>
+                <a target="_blank" href="https://currency-convertor-zeta-one.vercel.app/">Click here to try!</a>
+            </div>
+            <div class="firstProject">
+                <h3>Coding Cheet Sheet</h3>
+                <img src="project2.png" alt="project2">
+                <p id="cap">Master C++ in a Snap!</p>
+                <p> A quick, clean, and easy-to-use C++ reference guide to boost your coding speed and confidence.</p>
+                <a target="_blank" href="https://cpp-cheat-sheet.vercel.app/">Click here to try!</a>
+            </div>
+            <div class="firstProject">
+                <h3>Destination Paradise</h3>
+                <img src="project3.png" alt="project3">
+                <p id="cap">Escape the Ordinary - Discover Your Paradise Today!</p>
+                <p> Destination Paradise is your ultimate travel companion — explore dream destinations, plan unforgettable getaways, and turn your vacation fantasies into reality, all in one sleek web app.</p>
+                <a target="_blank" href="https://github.com/aryanpurwar/Destination-Paradise">Click here to try!</a>
+            </div>
+        </section> 
+        
+<hr>
+        <section class="thirdSection" id="contact"> 
+            <div id="left" class="circle"></div>
+            <div class="container">
+                <h1 id="#heading">Contact</h1>	
+                <label for="email">
+                    <input id="username" type="email" placeholder="E-mail">
+                </label>
+
+                <label for="query">
+                    <input id="query" type="text" placeholder="Query" required>
+                </label>
+            
+                <button class="btn" id="btn" type="submit"> Submit </button>
+            </div>
+
+            <div id="right" class="circle"></div>
+
+            <div class="afterSubmit hide">
+                <p>Form Submitted Successfully</p>
+                <button class="btn" id="btn2"> Fill another form</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aryan's Developer portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169
+             apurwar362@gmail.com | All right reserved
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Developer', 'Frontend Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        document.querySelector("#btn").addEventListener("click",()=>{
+            document.querySelector(".container").classList.add("hide");
+            document.querySelector("#left").classList.add("hide");
+            document.querySelector("#right").classList.add("hide");
+            document.querySelector(".afterSubmit").classList.remove("hide");
+        });
+        document.querySelector("#btn2").addEventListener("click",()=>{
+            document.querySelector(".container").classList.remove("hide");
+            document.querySelector("#left").classList.remove("hide");
+            document.querySelector("#right").classList.remove("hide");
+            document.querySelector(".afterSubmit").classList.add("hide");
+        
+        });
+    </script>
+</body>
+
+</html>

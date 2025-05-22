@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    background-color:rgb(18,18,62) ;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+nav ul li a:hover{
+    color:rgb(153, 153, 228);
+    font-size: 1.02rem;
+}
+.left{
+    font-size:1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin:70px 0;
+    align-items:center;
+    height: 85vh;
+
+}
+.firstSection div{
+    width:30%;
+}
+.leftSection{
+    font-size: 3rem;
+}
+.rightSection img{
+    width:80%;
+    margin:10px 0;
+}
+.purple{
+    color:rgb(153, 78, 222);
+}
+#element{
+    color:rgb(153, 78, 222);
+}
+
+.secondSection{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom:50px;
+    height: 100vh;
+}
+.secondSection h1{
+    text-align: center;
+    font-size: 3rem;
+    display: block;
+    width:100%;
+}
+.secondSection .firstProject{
+    height:400px;
+    width: 400px;
+    /* background: linear-gradient(45deg, #614385, #516395); */
+    background-color: rgb(18,18,62,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    border:none;    
+    border-radius: 10px;
+}
+.secondSection .firstProject h3{
+    font-size: 1.5rem;
+}
+.secondSection .firstProject p{
+    text-align: center;
+    font-size: 1rem;
+    color:rgb(255,255,255,0.5);
+}
+.secondSection .firstProject #cap{
+    color:whitesmoke;
+}
+.secondSection .firstProject a{
+    text-decoration: none;
+    color: white;
+}
+.secondSection .firstProject a:hover{
+    transform:scale(1.1);
+}
+
+.secondSection .firstProject img{
+    height: 40%;
+    width: 100%;
+    object-fit:contain;
+    /* border-radius: 10px; */
+    border:none;
+}
+
+.thirdSection{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:50px;
+    height: 100vh;
+}
+main hr{
+    border:0;
+    background-color: #9c97f1;
+    height:1.2px;
+    margin:45px 85px;
+
+}
+footer{
+    background-color: #160416;
+}
+.footer{
+    display: flex;
+    padding:23px 122px;
+    justify-content: space-evenly;
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width:220px;
+} 
+footer .footer-rights{
+    color:gray;
+    text-align: center;
+    padding: 12px 0;
+}
